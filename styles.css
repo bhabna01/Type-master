@@ -196,10 +196,13 @@ button {
 
 @media only screen and (min-width: 992px) {
   #histories {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
   }
 
   .card {
+
     flex-direction: column;
 
   }
