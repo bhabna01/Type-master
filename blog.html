@@ -13,41 +13,40 @@
 
 <body>
     <header>
-        <h1>Question&Answers</h1>
+        <h1 class="text-center mx-3 mt-5 my-5">Question&Answers</h1>
     </header>
     <main>
         <section>
-            <div>
-                <h3>What are the differences between local storage and session storage?</h3>
-                <p>Their main difference is that local storage data does not expire, whereas session storage data gets
-                    cleared when the user closes its browser window.<br>
-
-                    Page sessions are valid for only one tab at a time. So, if a user has three tabs open, each one will
-                    have its own page session.<br>
-
-                    Since local storage is not session-based, all the data must be deleted via javascript or manually.
+            <div class="border mx-5 my-5">
+                <h3 class="mt-3 text-center">What are the differences between local storage and session storage?</h3>
+                <p class="mx-3 my-3">Their main difference is that local storage data does not expire, whereas session
+                    storage data gets cleared when the user closes its browser window.Page sessions are valid for only
+                    one tab at a time. So, if a user has three tabs open, each one will
+                    have its own page session.Since local storage is not session-based, all the data must be deleted via
+                    javascript or manually.
                 </p>
             </div>
-            <div>
-                <h3>What are the differences between global scope and block scope?</h3>
-                <p>The variables defined outside of any function or curly brackets are known as global variables and
+            <div class="border mx-5 my-5">
+                <h3 class=" mt-3 text-center">What are the differences between global scope and block scope?</h3>
+                <p class="mx-3 my-3">The variables defined outside of any function or curly brackets are known as global
+                    variables and
                     have global scope. Global scope means that the variables can be accessed from any part of that
-                    program, any function or conditional state can access that variable.For example
-                    var name = "linuxHint";
+                    program, any function or conditional state can access that variable.For example<br>
+                    var name = "linuxHint";<br>
 
                     function printName(){<br>
                     // the variable can be accessed inside here<br>
                     console.log("This tutorial is by "+name);<br>
-                    }
+                    }<br>
 
                     printName();
                     <br>
                     On the other hand,Block scope is also a sub-type of local scope. The block scope can be defined as
                     the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops,
                     or conditional statements, or something else. You are only allowed to refer to these variables from
-                    within the curly brackets {}.For example
+                    within the curly brackets {}.For example<br>
                     function addition() {<br>
-                    {
+                    {<br>
                     let a = 10;<br>
                     const b = 5;<br>
                     }<br>
@@ -55,17 +54,19 @@
                     This block of code is itself inside a function.
                 </p>
             </div>
-            <div>
-                <h3>How javascript eventloop works?</h3>
-                <p>The Eventloop works on javascript's V8 engine Where the Event Loop has one simple job — to monitor
+            <div class="border mx-5 my-5">
+                <h3 class="mt-3 text-center">How javascript eventloop works?</h3>
+                <p class="mx-3 my-3">The Eventloop works on javascript's V8 engine Where the Event Loop has one simple
+                    job — to monitor
                     the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the
                     first event from the queue and will push it to the Call Stack, which effectively runs it.
 
                     Such an iteration is called a tick in the Event Loop. Each event is just a function callback.</p>
             </div>
-            <div>
-                <h3>In how many ways one can get undefined in javascript?</h3>
-                <p>1.One will get undefined value when calling a non-existent property or method of an object.<br>
+            <div class="border mx-5 my-5">
+                <h3 class="mt-3 text-center">In how many ways one can get undefined in javascript?</h3>
+                <p class="mx-3 my-3">1.One will get undefined value when calling a non-existent property or method of an
+                    object.<br>
                     2.A method or statement also returns undefined if the variable that is being evaluated does not have
                     an assigned value.<br>
                     3. A function returns undefined if a value was not returned.
